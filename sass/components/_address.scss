@@ -1,0 +1,24 @@
+.address__name {
+  color: $primary-white-color;
+  margin-bottom: 9px;
+  margin-top: 20px;
+}
+
+.adress__contacts {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+
+  @media screen and (min-width: $desktop) {
+    &__box {
+      margin-right: 70px;
+    }
+  }
+}
+
+.adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}

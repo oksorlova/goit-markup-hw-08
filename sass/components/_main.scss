@@ -1,0 +1,108 @@
+.main {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-480@1x.jpg);
+  background-size: cover;
+  background-color: #c4c4c4;
+  background-position: center;
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 44px;
+    }
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .main {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-480@2x.jpg);
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .main {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-768@1x.jpg);
+  }
+
+  @media (min-resolution: 2dppx) {
+    .main {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-768@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .main {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-1200@1x.jpg);
+  }
+
+  @media (min-resolution: 2dppx) {
+    .main {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-1200@2x.jpg);
+    }
+  }
+}
+
+.main__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+  cursor: pointer;
+  background-color: $primary-accent-color;
+  padding: 10px 32px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
