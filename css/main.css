@@ -150,9 +150,8 @@ ul {
   background-color: #ffffff;
   padding-left: 40px;
   padding-bottom: 48px;
-  z-index: 999;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -744,8 +743,8 @@ ul {
   .team__member {
     width: 354px;
     margin: 15px;
-    -ms-flex-preferred-size: calc((100%-2 * 30px) / 2);
-        flex-basis: calc((100%-2 * 30px) / 2);
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
   }
 }
 
@@ -957,7 +956,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .works__example {
-    width: calc((100%-2 * 30px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
     width: 354px;
   }
@@ -965,7 +964,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .works__example {
-    width: calc((100%-3 * 30px) / 3);
+    width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
     width: 370px;
   }

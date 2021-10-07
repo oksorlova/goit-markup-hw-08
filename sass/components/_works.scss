@@ -69,13 +69,13 @@
   }
 
   @media screen and (min-width: $tablet) {
-    width: calc((100%-2 * 30px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
     width: 354px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: calc((100%-3 * 30px) / 3);
+    width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
     width: 370px;
   }
