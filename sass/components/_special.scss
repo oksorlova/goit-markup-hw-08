@@ -4,41 +4,53 @@
   }
 
   &__list {
-    @media screen and (min-width: $tablet) {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
+      margin: -15px;
     }
   }
-}
+
 
 .special__item {
   color: $secondary-text-color;
-  width: 450px;
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  width: 100%;
+  margin: 15px;
+}
 
-  @media screen and (min-width: $tablet) {
-    width: 354px;
-    margin-right: 30px;
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
 
-    &:nth-child(2n) {
-      margin-right: 0px;
-    }
-  }
+//   @media screen and (min-width: $tablet) {
+//     width: 354px;
+//     margin-right: 30px;
+//     &:nth-last-child(-n + 2) {
+//       margin-bottom: 0;
+//     }
 
-  @media screen and (min-width: $desktop) {
-    width: 270px;
-    &:not(:last-child) {
-      margin-right: 30px;
-      margin-bottom: 0;
-    }
+//     &:nth-child(2n) {
+//       margin-right: 0px;
+//     }
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     width: 270px;
+//     &:not(:last-child) {
+//       margin-right: 30px;
+//       margin-bottom: 0;
+//     }
+//   }
+// }
+
+@media screen and (min-width: $tablet) {
+  .special__item {
+    width: calc((100% - 2 * 30px) / 2);
   }
 }
 
+@media screen and (min-width: $desktop) {
+  .special__item {
+    width: calc((100% - 4 * 30px) / 4);
+  }
+}
 .special__title {
   font-weight: 700;
   font-size: 14px;
@@ -55,23 +67,50 @@
 
 .special__blok {
   background-color: #f5f4fa;
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    width: 354px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 270px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
+  margin-bottom: 30px;
+  
 }
+
+// @media screen and (min-width: $tablet) {
+//   .special__blok {
+//     width: calc((100% - 2 * 30px) / 2);
+//   }
+// }
+
+// @media screen and (min-width: $desktop) {
+//   .special__blok {
+//     width: calc((100% - 4 * 30px) / 4);
+//   }
+// }
+//   &:not(:last-child) {
+//     margin-bottom: 30px;
+//   }
+
+//   @media screen and (min-width: $tablet) {
+//     width: 354px;
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     width: 270px;
+//     &:not(:last-child) {
+//       margin-right: 30px;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: $tablet) {
+//   .special__blok {
+//     width: calc((100% - 2 * 30px) / 2);
+//   }
+// }
+
+// @media screen and (min-width: $desktop) {
+//   .special__blok {
+//     width: calc((100% - 4 * 30px) / 4);
+//   }
+// }

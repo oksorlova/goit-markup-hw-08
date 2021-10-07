@@ -5,12 +5,12 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero-480@1x.jpg);
-  background-size: cover;
   background-color: #c4c4c4;
   background-position: center;
+  background-size: cover;
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -27,6 +27,14 @@
     @media screen and (min-width: $desktop) {
       font-size: 44px;
     }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .main {
+    padding-top: 200px;
+  padding-bottom: 200px;
+
   }
 }
 
