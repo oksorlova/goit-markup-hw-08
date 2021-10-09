@@ -8,13 +8,16 @@
 
 
   @media screen and(min-width: $tablet) {
-    display: flex;
-    flex-direction: column;
-    &__item:not(:last-child) {
-      margin-bottom: 10px;
+    .contacts {
+      display: flex;
+    flex-direction: column;}
+
+    @media screen and(max-width: 1199px) {
+      .contacts__item:not(:last-child) {
+        margin-bottom: 10px;
+      }
     }
   }
-
 }
 
 
@@ -69,8 +72,10 @@
   }
 }
 
-// .contacts--burger {
-// }
+.contacts--burger {
+  display: block;
+  margin: auto;
+}
 
 .contacts__link--burger {
   font-weight: 500;

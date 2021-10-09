@@ -163,9 +163,6 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .menu-burger__container.is-open {
@@ -235,6 +232,10 @@ ul {
   letter-spacing: 0.02em;
   color: #2196f3;
   display: block;
+}
+
+.nav-burger {
+  margin-bottom: auto;
 }
 
 .navigation {
@@ -423,7 +424,7 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  .contacts {
+  .contacts .contacts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -432,7 +433,10 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contacts__item:not(:last-child) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts .contacts__item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
@@ -505,6 +509,11 @@ ul {
   .contacts__icon {
     margin-right: 10px;
   }
+}
+
+.contacts--burger {
+  display: block;
+  margin: auto;
 }
 
 .contacts__link--burger {
