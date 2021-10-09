@@ -10,7 +10,7 @@
 
 .works__list {
   @media screen and (min-width: $tablet) {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     margin: -15px;
   }
@@ -126,10 +126,36 @@
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
+  padding-right: 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  flex-grow: 1;
+  display: block;  
 }
+
+
+  .works__info--current {
+    padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  flex-grow: 1;
+  display: block; 
+
+  @media screen and (min-width:$tablet){
+    padding-bottom: 56px;}
+
+    @media screen and (min-width:$desktop){
+      padding-bottom: 20px;
+      
+    }
+    
+  }
+
 
 .works__overlay {
   position: absolute;

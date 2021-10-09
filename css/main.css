@@ -145,8 +145,8 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 100%;
-  max-height: 796;
+  width: 100vw;
+  height: 100vh;
   background-color: #ffffff;
   padding-left: 40px;
   padding-bottom: 48px;
@@ -325,6 +325,36 @@ ul {
   margin-bottom: 0;
 }
 
+.navigation__link--burger-current {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #2196f3;
+  position: relative;
+  display: block;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__link--burger-current:hover, .navigation__link--burger-current:focus {
+  color: #2196f3;
+}
+
+.navigation__list--burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
 .logo {
   font-family: Raleway;
   font-size: 24px;
@@ -382,7 +412,16 @@ ul {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -393,6 +432,14 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .contacts__item:not(:last-child) {
     margin-right: 50px;
@@ -407,9 +454,7 @@ ul {
   text-decoration: none;
   color: #757575;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -425,6 +470,9 @@ ul {
 @media screen and (min-width: 1200px) {
   .contacts__link {
     font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -437,14 +485,20 @@ ul {
 }
 
 .contacts__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: #757575;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts__icon {
+    margin-right: 10px;
+  }
+}
+
 .contacts--burger {
-  margin-top: 302px;
+  margin-top: 25px;
 }
 
 .contacts__link--burger {
@@ -454,6 +508,16 @@ ul {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #757575;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .contacts__link--burger--tel {
@@ -844,9 +908,9 @@ ul {
 
 @media screen and (min-width: 768px) {
   .works__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -15px;
@@ -964,9 +1028,40 @@ ul {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
+  padding-right: 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: block;
+}
+
+.works__info--current {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .works__info--current {
+    padding-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works__info--current {
+    padding-bottom: 20px;
+  }
 }
 
 .works__overlay {
@@ -1187,7 +1282,7 @@ ul {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
-  top: 8px;
+  top: 20px;
   right: 8px;
   padding: 6px 6px;
   display: -webkit-box;
