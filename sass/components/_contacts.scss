@@ -74,7 +74,7 @@
 
 .contacts--burger {
   display: block;
-  margin: auto;
+  margin-top: auto;
 }
 
 .contacts__link--burger {
@@ -89,7 +89,7 @@
   justify-content: flex-end;
 
   &--tel {
-    font-size: 40px;
+    font-size: 8.2vw;
     color: $primary-accent-color;
     text-decoration: none;
   }
