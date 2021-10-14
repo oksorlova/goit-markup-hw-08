@@ -1080,6 +1080,12 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 320px) {
+  .works__overlay {
+    font-size: 3.7vw;
+  }
+}
+
 .works__wrap {
   position: relative;
   overflow: hidden;
@@ -1242,6 +1248,7 @@ ul {
   margin-top: 60px;
   margin-bottom: 60px;
   margin-left: 165px;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 767px) {
